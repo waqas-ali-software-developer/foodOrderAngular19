@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-
+import { Foods } from '../../shared/models/food';
 @Injectable({
   providedIn: 'root'
 })
@@ -7,16 +7,63 @@ export class FoodService {
 
   constructor() { }
 
-  getAll(): string[] {
+  getAll():Foods[] {
     return [
-      'food1.jpg',
-      'food2.jpg',
-      'food3.jpg',
-      'food4.jpg',
-      'food5.jpg',
-      'food6.jpg',
-      'food7.jpg',
-      'food8.jpg',
+      {
+        id: 1,
+        name: 'Pizza',
+        cookTime: '10-20',
+        price: 10,
+        favorite: false,
+        origins: ['UK', 'Belgium'],
+        stars: 4.2,
+        imageUrl: 'food1.jpg',
+        tags: ['Fast Food', 'Chinese']
+      },
+       {
+        id: 2,
+        name: 'Pizza2',
+        cookTime: '15-20',
+        price: 10,
+        favorite: true,
+        origins: ['Japan'],
+        stars: 4.2,
+        imageUrl: 'food2.jpg',
+        tags: ['Fast Food', 'Chinese']
+      },
+        {
+        id: 3,
+        name: 'Pizza2',
+        cookTime: '15-20',
+        price: 10,
+        favorite: true,
+        origins: ['Japan', 'China'],
+        stars: 4.2,
+        imageUrl: 'food3.jpg',
+        tags: ['Fast Food', 'Chinese']
+      },
+      {
+        id: 3,
+        name: 'Pizza2',
+        cookTime: '15-20',
+        price: 10,
+        favorite: true,
+        origins: ['Japan'],
+        stars: 4.2,
+        imageUrl: 'food4.jpg',
+        tags: ['Fast Food', 'Chinese']
+      },
+      {
+        id: 4,
+        name: 'Pizza2',
+        cookTime: '15-20',
+        price: 10,
+        favorite: true,
+        origins: ['Japan'],
+        stars: 3,
+        imageUrl: 'food4.jpg',
+        tags: ['Fast Food', 'Chinese']
+      }
     ]
   }
 }
