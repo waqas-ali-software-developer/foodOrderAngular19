@@ -33,7 +33,7 @@ export class FoodService {
       },
         {
         id: 3,
-        name: 'Pizza2',
+        name: 'Burger',
         cookTime: '15-20',
         price: 10,
         favorite: true,
@@ -44,7 +44,7 @@ export class FoodService {
       },
       {
         id: 3,
-        name: 'Pizza2',
+        name: 'Chips',
         cookTime: '15-20',
         price: 10,
         favorite: true,
